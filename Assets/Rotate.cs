@@ -8,7 +8,8 @@ public class Rotate : MonoBehaviour
 
     void Start()
     {
-
+        // 旋轉速度、讓輪盤旋轉
+        // transform.Rotate(0, 0, 50);
     }
 
     void Update()
@@ -21,5 +22,7 @@ public class Rotate : MonoBehaviour
 
         // 旋轉速度、讓輪盤旋轉
         transform.Rotate(0, 0, rotSpeed);
+
+        rotSpeed *= 0.996f;
     }
 }
